@@ -63,16 +63,6 @@ parameters:
 
     # RBD image format. Defaults to "2".
     imageFormat: "2"
-
-    # RBD image features
-    # Available for imageFormat: "2". Older releases of CSI RBD
-    # support only the `layering` feature. The Linux kernel (KRBD) supports the
-    # full complement of features as of 5.4
-    # `layering` alone corresponds to Ceph's bitfield value of "2" ;
-    # `layering` + `fast-diff` + `object-map` + `deep-flatten` + `exclusive-lock` together
-    # correspond to Ceph's OR'd bitfield value of "63". Here we use
-    # a symbolic, comma-separated format:
-    # For 5.4 or later kernels:
     #imageFeatures: layering,fast-diff,object-map,deep-flatten,exclusive-lock
     # For 5.3 or earlier kernels:
     imageFeatures: layering
