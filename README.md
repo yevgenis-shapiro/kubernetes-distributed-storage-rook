@@ -19,11 +19,9 @@ Rook turns distributed storage systems into self-managing, self-scaling, self-he
 
 ### Components :
 ```
-📃 Longhorn Backing Image Manager
-📃 Longhorn Instance Manager
-📃 Longhorn Manager
-📃 Longhorn Share Manager
-📃 Longhorn UI
+📃 Block Storage
+📃 Shared Filesystem
+📃 Object Storage S3
 ```
 
 
@@ -62,20 +60,6 @@ parameters:
     clusterID: rook-ceph
     # Ceph pool into which the RBD image shall be created
     pool: replicapool
-
-    # (optional) mapOptions is a comma-separated list of map options.
-    # For krbd options refer
-    # https://docs.ceph.com/docs/master/man/8/rbd/#kernel-rbd-krbd-options
-    # For nbd options refer
-    # https://docs.ceph.com/docs/master/man/8/rbd-nbd/#options
-    # mapOptions: lock_on_read,queue_depth=1024
-
-    # (optional) unmapOptions is a comma-separated list of unmap options.
-    # For krbd options refer
-    # https://docs.ceph.com/docs/master/man/8/rbd/#kernel-rbd-krbd-options
-    # For nbd options refer
-    # https://docs.ceph.com/docs/master/man/8/rbd-nbd/#options
-    # unmapOptions: force
 
     # RBD image format. Defaults to "2".
     imageFormat: "2"
