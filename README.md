@@ -17,7 +17,7 @@ Rook turns distributed storage systems into self-managing, self-scaling, self-he
 ```
 
 
-### Components :
+🎯 Focus
 ```
 📃 Block Storage
 📃 Shared Filesystem
