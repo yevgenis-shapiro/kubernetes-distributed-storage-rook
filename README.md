@@ -25,18 +25,6 @@ Rook turns distributed storage systems into self-managing, self-scaling, self-he
 ```
 
 
-🔨 Integration :
-```
-# MySQL
-# MariaDB
-# PostgresSQL
-# Cassandra
-# Kafka
-# Mongo
-# Elastic
-```
-
-
 🧩 Config 
 ```
 apiVersion: ceph.rook.io/v1
